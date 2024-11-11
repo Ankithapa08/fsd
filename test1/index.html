@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+    function validatePassword(password) {
+        const minLength = 6;
+        const hasUppercase = /[A-Z]/.test(password);
+        const hasLowercase = /[a-z]/.test(password);
+        const hasNumber = /[0-9]/.test(password);
+
+        if (password.length < minLength) {
+            alert("Password must be at least " + minLength + " characters long.");
+            return false;
+        }
+        if (!hasUppercase) {
+            alert("Password must contain at least one uppercase letter.");
+            return false;
+        }
+       
+        if (!hasNumber) {
+            alert("Password must contain at least one number.");
+            return false;
+        }
+        return true;
+    }
+
+    function login() {
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+        if (username && validatePassword(password)) {
+            document.getElementById('userWelcome').innerText = username;
+            } else if (!username) {
+            alert("Please enter a valid username.");
+        }
+    }
+</script>
+<body>
+    <h1>Login</h1>
+    <form action="index2.html" >
+
+        <input type="text"  class="inp-size" placeholder="Username"><br>
+        <input type="password"  class="inp-size" placeholder="Password"><br>
+<button class="btn" onclick="">Log in</button>
+
+
+    </form>
+</body>
+</html>

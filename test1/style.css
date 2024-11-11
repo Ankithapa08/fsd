@@ -1,0 +1,11 @@
+*{
+    margin: 10px;
+    padding: 8x;
+}
+.btn{
+ background-color: rgb(70, 248, 70);
+}
+.inp-size{
+   height: 20px;
+    width: 600px;
+}

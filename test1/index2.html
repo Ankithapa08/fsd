@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    
+</head>
+<link rel="stylesheet" href="style2.css">
+<body>
+
+<div class="dashboard">
+    <h1 class="dashboard-heading">Dashboard</h1>
+    <p class="welcome-message">Welcome Ankit Thapa</p>
+
+    <div class="controls">
+        <button onclick="fetchUsers()">Fetch Top 10 GitHub Users</button>
+        <select>
+            <option>Default</option>
+            <option>Sort by Name</option>
+            <option>Sort by Repositories</option>
+        </select>
+    </div>
+
+    <div class="user_list">
+        <ul id="userList">
+            <li>mojombo</li>
+            <li>defunkt</li>
+            <li>pjhyett</li>
+            <li>wycats</li>
+            <li>ezmobius</li>
+            <li>ivey</li>
+            <li>evanphx</li>
+            <li>vanpelt</li>
+            <li>wayneeseguin</li>
+            <li>brynary</li>
+        </ul>
+    </div>
+
+    <button class="logout-btn">Logout</button>
+</div>
+
+<script>
+    function fetchUsers() {
+        alert("Fetching Top 10 GitHub Users...");
+    }
+</script>
+
+</body>
+</html>

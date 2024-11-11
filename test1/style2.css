@@ -1,0 +1,52 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .dashboard {
+            margin: 0 auto;
+            border: 1px solid #ddd;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .dashboard-heading {
+            color: green;
+            font-size: 24px;
+        }
+        .welcome-message {
+            font-size: 18px;
+            color: green;
+        }
+        .controls {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .controls button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        .controls select {
+            padding: 8px;
+        }
+        .user_list {
+            text-align: left;
+            margin-top: 20px;
+        }
+        .user_list ul {
+            list-style: none;
+            padding: 0;
+            color: blue;
+        }
+        .logout-btn {
+            margin-top: 20px;
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
